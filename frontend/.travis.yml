@@ -7,3 +7,5 @@ before_install:
 
 script:
   - docker run pavankumarbvrm/docker-in-action npm run test -- --coverage
+    on:
+      branch: master
