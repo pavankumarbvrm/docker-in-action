@@ -4,6 +4,7 @@ services:
 
 before_install:
   - docker build -t pavankumarbvrm/docker-in-action .
+  - gem install rake
 
 deploy:
   provider: elasticbeanstalk
