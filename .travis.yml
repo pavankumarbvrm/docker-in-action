@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t pavankumarbvrm/docker-in-action -f frontend/Dockerfile.dev .
+  - docker build -t pavankumarbvrm/docker-in-action -f frontend/Dockerfile
 
 script:
   - docker run pavankumarbvrm/docker-in-action npm run test -- --coverage
