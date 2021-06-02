@@ -5,9 +5,6 @@ services:
 before_install:
   - docker build -t pavankumarbvrm/docker-in-action .
 
-#script:
-#  - docker run pavankumarbvrm/docker-in-action npm run test -- --coverage
-
 deploy:
   provider: elasticbeanstalk
   region: "us-east-1"
