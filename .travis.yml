@@ -1,11 +1,11 @@
 sudo: required
+language: node_js
 services:
   - docker
 
 before_install:
   - docker build -t pavankumarbvrm/docker-in-action .
-  - gem install rake
-
+  
 deploy:
   provider: elasticbeanstalk
   region: "us-east-1"
