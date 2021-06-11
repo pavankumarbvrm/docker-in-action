@@ -85,3 +85,7 @@ sudo chown -f -R $USER ~/.kube
 sudo su - $USER
 sudo snap alias eks.kubectl kubectl
 sudo eks status --wait-ready
+
+
+kubectl set image deployment.v1.apps/client-deployment client=pavankumarbvrm/multi-client:v1
+
